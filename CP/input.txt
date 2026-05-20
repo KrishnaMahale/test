@@ -1,0 +1,12 @@
+$AMJ
+PD10
+H   
+$DTA
+HELLO
+$END
+$AMJ
+PD20
+H   
+$DTA
+WORLD
+$END

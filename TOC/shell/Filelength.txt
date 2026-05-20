@@ -1,0 +1,14 @@
+small=""
+
+for file in *
+do
+    if [ -f "$file" ]
+    then
+        if [ -z "$small" ] || [ ${#file} -lt ${#small} ]
+        then
+            small=$file
+        fi
+    fi
+done
+
+echo "Smallest filename is: $small"

@@ -1,0 +1,18 @@
+echo "Enter input file name:"
+read file
+
+> even
+> odd
+
+for num in $(cat $file)
+do
+    if [ $((num % 2)) -eq 0 ]
+    then
+        echo $num >> even
+    else
+        echo $num >> odd
+    fi
+done
+
+echo "Even numbers stored in even file"
+echo "Odd numbers stored in odd file"
